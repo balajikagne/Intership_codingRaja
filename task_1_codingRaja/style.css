@@ -1,0 +1,77 @@
+/* css==>the cascading style sheet */
+
+/* there are three types */
+/* 1.line styling */
+/* in this type we use css inside the HTML code */
+/* 2.internal styling  */
+/* in this type we use css file in html code, inside the head tag */
+/* ex. inside the style tag
+<style>css code</style>
+ */
+/* 3.external styling */
+/* in this type we include the css file externally in html code */
+/* ex.<link rel="stylesheet" href="style.css">    (trick==>link:css)*/ 
+
+
+/* this body part can write by two way ==>1.body,2.* */
+/* body{
+    background-color: greenyellow;
+} */
+
+
+/* types of selector */
+/* 1)this type is called as universal selector */
+*{
+    background-color: yellow;
+}
+/* 2)this type is called as elementary selector */
+p{
+    text-align: center;
+}
+h1{
+    /* the color is use to color the heading */
+    color: brown;
+    /* this text-aling set the heading at particular position */
+    text-align: center;
+    /* this bgc change the background of h1 ,complete horizontal line is change */
+    background-color: wheat;
+    /* this change the border color, complete horizontal line */
+    border: solid red 10px;
+}
+/* 3) this type is called as list selector */
+.p1,.p2{
+    background-color: aqua;
+}
+/* 4) this type is called as desender selector*/
+main p{
+    background-color: rgb(75, 155, 18);
+    text-align: left;
+}
+/* 5) this type is called as child selector */
+h2>p{
+    color: rgb(19, 18, 17);
+}
+/* 6)this type is called as adjecent selector */
+section +p{
+    background-color: rgb(42, 157, 157);
+}
+/*  7)this is type called as general selector*/
+section ~p{
+    background-color: rgb(42, 157, 157);
+
+}
+/* 8)this is type called as attribute selector */
+/* this target deside the where the page is open */
+[target="_blank"]
+a{
+    color: blue;
+    text-decoration: none;
+}
+/* this is another type of attribute selector*/
+[alt~="pw"]
+img{
+    background-color: red;
+}
+
+
+
